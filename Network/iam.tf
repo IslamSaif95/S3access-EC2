@@ -28,6 +28,3 @@ resource "aws_iam_role" "S3AccessRole" {
 
 }
 
-output "iam_instance_profile" {
-  value = aws_iam_instance_profile.EC2-S3-Access.name
-}
