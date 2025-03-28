@@ -1,3 +1,11 @@
+terraform {
+  backend "s3" {
+    bucket = "islamsaifs3bucket1995forstatefile"
+    key    = "Terraform/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
+
 module "Network" {
   source    = "./Network"
   vpc_cidr  = var.vpc_cidr
